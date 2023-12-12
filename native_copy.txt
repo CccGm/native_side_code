@@ -1,0 +1,4 @@
+ActivityDiscovery.java  ==>
+
+startDiscovering() -- DnsDiscovery.java    
+stopDiscovering()
