@@ -6,6 +6,7 @@ import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.ReactShadowNode
 import com.facebook.react.uimanager.ViewManager
+import com.native_code.networkdiscovery.NetworkDiscoveryModule
 
 class MyAppPackage : ReactPackage {
 
@@ -15,5 +16,6 @@ class MyAppPackage : ReactPackage {
 
     override fun createNativeModules(
         reactContext: ReactApplicationContext
-    ): MutableList<NativeModule> = listOf(CalendarModule(reactContext)).toMutableList()
+    ): MutableList<NativeModule> =
+        listOf(CalendarModule(reactContext), NetworkDiscoveryModule(reactContext)).toMutableList()
 }
